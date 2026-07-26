@@ -1,0 +1,68 @@
+{
+  "manifest_version": 3,
+  "name": "RocketBall Rating Sniffer",
+  "version": "1.0",
+  "description": "Intercepts Photon WebSocket packets to reveal opponent Glicko-2 ratings.",
+  "permissions": [
+    "storage",
+    "unlimitedStorage",
+    "activeTab",
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://*.exitgames.com/*",
+    "*://rocketball.io/*",
+    "*://www.rocketball.io/*",
+    "*://rocketgoal.io/*",
+    "*://www.rocketgoal.io/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://rocketball.io/*",
+        "*://www.rocketball.io/*",
+        "*://rocketgoal.io/*",
+        "*://www.rocketgoal.io/*"
+      ],
+      "js": ["ws_hook.js", "overlay.js"],
+      "run_at": "document_start",
+      "world": "MAIN",
+      "all_frames": true
+    },
+    {
+      "matches": [
+        "*://rocketball.io/*",
+        "*://www.rocketball.io/*",
+        "*://rocketgoal.io/*",
+        "*://www.rocketgoal.io/*"
+      ],
+      "js": ["relay.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "action": {
+    "default_title": "Rating Sniffer"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "leaderboard.html",
+        "leaderboard.css",
+        "leaderboard.js",
+        "Popup_Frame01_Navy1.png",
+        "assets/texture/*"
+      ],
+      "matches": [
+        "*://rocketball.io/*",
+        "*://www.rocketball.io/*",
+        "*://rocketgoal.io/*",
+        "*://www.rocketgoal.io/*"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🏆 Rocketball Leaderboard</title>
+  <link rel="stylesheet" href="leaderboard.css">
+</head>
+<body>
+  <div class="rocketball-window">
+    <div class="window-header">
+      <h2>LEADERBOARD</h2>
+      <button id="close-btn" class="close-btn">✖</button>
+    </div>
+    
+    <div style="text-align: center; margin-top: 4px; margin-bottom: 8px;">
+      <label style="color: #d7f3ff; font-size: 20px; font-weight: bold; cursor: pointer; text-shadow: 1px 1px 2px black;">
+        <input type="checkbox" id="show-cars-checkbox" style="vertical-align: middle; margin-right: 4px;"> Show Cars
+      </label>
+    </div>
+    
+    <div class="tabs-container" id="tabs-container"></div>
+    
+    <div class="window-content" id="leaderboard-container">
+      <div class="loading-text">Loading database...</div>
+    </div>
+  </div>
+  
+  <script src="leaderboard.js"></script>
+</body>
+</html>
