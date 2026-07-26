@@ -9,7 +9,12 @@
 
 ### Features
 - the extension intercepts the game session ws and extract the raw gicklo mmr for each players in the lobby( which is the one used for matchmakig ,not the display rating ).
+- by holding tab , a small overlay appears containing the rating of the players in the current game session.
 - it builds a local database of the encountred players for 3 different ranked modes.
+- to see the leaderboard , you simply click on the extension.
+### preview
+  <img width="629" height="926" alt="Screenshot From 2026-07-26 19-07-52" src="https://github.com/user-attachments/assets/82e5f0f3-01ee-4e50-b429-a241a35fc511" />
+
   
 
 
