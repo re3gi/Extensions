@@ -8,7 +8,7 @@
 
 
 ### Features
-- the extension intercepts the game session ws and extract the raw gicklo mmr for each players in the lobby( which is the one used for matchmakig ,not the display rating ).
+- the extension intercepts the game session ws and extract the raw gicklo mmr for each player in the lobby (which is the one used for matchmaking ,not the display rating ).
 - by holding tab , a small overlay appears containing the rating of the players in the current game session.
 - it builds a local database of the encountred players for 3 different ranked modes.
 - it also stores the car types used by players.
