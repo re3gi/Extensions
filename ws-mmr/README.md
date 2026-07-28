@@ -13,8 +13,6 @@
 - it builds a local database of the encountred players for 3 different ranked modes.
 - it also stores the car types used by players.
 - to see the leaderboard , you simply click on the extension.
-### Preview
-  <img width="629" height="926" alt="Screenshot From 2026-07-26 19-07-52" src="https://github.com/user-attachments/assets/82e5f0f3-01ee-4e50-b429-a241a35fc511" />
 
   
 
